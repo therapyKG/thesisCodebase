@@ -2,15 +2,48 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-SHELL = cmd.exe
-
-CG_TOOL_ROOT := C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS
+CG_TOOL_ROOT := /Applications/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS
 
 GEN_OPTS__FLAG := 
 GEN_CMDS__FLAG := 
 
 ORDERED_OBJS += \
 "./main.obj" \
+"./driverlib/adc12_b.obj" \
+"./driverlib/aes256.obj" \
+"./driverlib/comp_e.obj" \
+"./driverlib/crc.obj" \
+"./driverlib/crc32.obj" \
+"./driverlib/cs.obj" \
+"./driverlib/dma.obj" \
+"./driverlib/esi.obj" \
+"./driverlib/eusci_a_spi.obj" \
+"./driverlib/eusci_a_uart.obj" \
+"./driverlib/eusci_b_i2c.obj" \
+"./driverlib/eusci_b_spi.obj" \
+"./driverlib/framctl.obj" \
+"./driverlib/framctl_a.obj" \
+"./driverlib/gpio.obj" \
+"./driverlib/hspll.obj" \
+"./driverlib/lcd_c.obj" \
+"./driverlib/mpu.obj" \
+"./driverlib/mpy32.obj" \
+"./driverlib/mtif.obj" \
+"./driverlib/pmm.obj" \
+"./driverlib/ram.obj" \
+"./driverlib/ref_a.obj" \
+"./driverlib/rtc_b.obj" \
+"./driverlib/rtc_c.obj" \
+"./driverlib/saph.obj" \
+"./driverlib/saph_a.obj" \
+"./driverlib/sdhs.obj" \
+"./driverlib/sfr.obj" \
+"./driverlib/sysctl.obj" \
+"./driverlib/timer_a.obj" \
+"./driverlib/timer_b.obj" \
+"./driverlib/tlv.obj" \
+"./driverlib/uups.obj" \
+"./driverlib/wdt_a.obj" \
 "../lnk_msp430fr5994.cmd" \
 $(GEN_CMDS__FLAG) \
 -llibmpu_init.a \
@@ -19,13 +52,15 @@ $(GEN_CMDS__FLAG) \
 
 -include ../makefile.init
 
-RM := DEL /F
-RMDIR := RMDIR /S/Q
+RM := rm -rf
+RMDIR := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include subdir_vars.mk
+-include driverlib/subdir_vars.mk
 -include subdir_rules.mk
+-include driverlib/subdir_rules.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
@@ -142,22 +177,22 @@ all: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 temp.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: "$@"'
 	@echo 'Invoking: MSP430 Linker'
-	"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5994__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"temp.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1210/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1210/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1210/ccs/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="temp_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "temp.out" $(ORDERED_OBJS)
+	"/Applications/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power="all" --advice:hw_config="all" --define=__MSP430FR5994__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"temp.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"/Applications/ti/ccs1210/ccs/ccs_base/msp430/include" -i"/Applications/ti/ccs1210/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"/Applications/ti/ccs1210/ccs/ccs_base/msp430/lib/FR59xx" -i"/Applications/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"/Applications/ti/msp/MSP430Ware_3_80_14_01/driverlib/driverlib/MSP430FR5xx_6xx\"--priority/" -i"/\"/Applications/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include/\"" -i"\"/Applications/ti/msp/MSP430Ware_3_80_14_01/driverlib/driverlib/MSP430FR5xx_6xx\"--priority/\" -i\"/\"/Applications/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include/\"\" --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info=\"/\"temp_linkInfo.xml/\"\" --use_hw_mpy=F5 --rom_model\"" -i"/\"/Applications/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include/\"\"-i\"/\"/Applications/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include/\"/" --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="/\"/\"temp_linkInfo.xml/\"/\"" --use_hw_mpy=F5 --rom_model\"" --define=_MPU_ENABLE -o "temp.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 temp.hex: $(EXE_OUTPUTS)
 	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: MSP430 Hex Utility'
-	"C:/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/hex430" --memwidth=8 --romwidth=8 --diag_wrap=off -o "temp.hex" $(EXE_OUTPUTS__QUOTED)
+	"/Applications/ti/ccs1210/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/hex430" --memwidth=8 --romwidth=8 --diag_wrap=off -o "temp.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "main.obj" 
-	-$(RM) "main.d" 
+	-$(RM) "main.obj" "driverlib/adc12_b.obj" "driverlib/aes256.obj" "driverlib/comp_e.obj" "driverlib/crc.obj" "driverlib/crc32.obj" "driverlib/cs.obj" "driverlib/dma.obj" "driverlib/esi.obj" "driverlib/eusci_a_spi.obj" "driverlib/eusci_a_uart.obj" "driverlib/eusci_b_i2c.obj" "driverlib/eusci_b_spi.obj" "driverlib/framctl.obj" "driverlib/framctl_a.obj" "driverlib/gpio.obj" "driverlib/hspll.obj" "driverlib/lcd_c.obj" "driverlib/mpu.obj" "driverlib/mpy32.obj" "driverlib/mtif.obj" "driverlib/pmm.obj" "driverlib/ram.obj" "driverlib/ref_a.obj" "driverlib/rtc_b.obj" "driverlib/rtc_c.obj" "driverlib/saph.obj" "driverlib/saph_a.obj" "driverlib/sdhs.obj" "driverlib/sfr.obj" "driverlib/sysctl.obj" "driverlib/timer_a.obj" "driverlib/timer_b.obj" "driverlib/tlv.obj" "driverlib/uups.obj" "driverlib/wdt_a.obj" 
+	-$(RM) "main.d" "driverlib/adc12_b.d" "driverlib/aes256.d" "driverlib/comp_e.d" "driverlib/crc.d" "driverlib/crc32.d" "driverlib/cs.d" "driverlib/dma.d" "driverlib/esi.d" "driverlib/eusci_a_spi.d" "driverlib/eusci_a_uart.d" "driverlib/eusci_b_i2c.d" "driverlib/eusci_b_spi.d" "driverlib/framctl.d" "driverlib/framctl_a.d" "driverlib/gpio.d" "driverlib/hspll.d" "driverlib/lcd_c.d" "driverlib/mpu.d" "driverlib/mpy32.d" "driverlib/mtif.d" "driverlib/pmm.d" "driverlib/ram.d" "driverlib/ref_a.d" "driverlib/rtc_b.d" "driverlib/rtc_c.d" "driverlib/saph.d" "driverlib/saph_a.d" "driverlib/sdhs.d" "driverlib/sfr.d" "driverlib/sysctl.d" "driverlib/timer_a.d" "driverlib/timer_b.d" "driverlib/tlv.d" "driverlib/uups.d" "driverlib/wdt_a.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

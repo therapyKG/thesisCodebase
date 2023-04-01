@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+environment/project/com.ti.ccstudio.buildDefinitions.MSP430.Debug.1180373388/append=true
+environment/project/com.ti.ccstudio.buildDefinitions.MSP430.Debug.1180373388/appendContributed=true
+environment/project/com.ti.ccstudio.buildDefinitions.MSP430.Debug.1180373388/driverlib/delimiter=\:
+environment/project/com.ti.ccstudio.buildDefinitions.MSP430.Debug.1180373388/driverlib/operation=replace
+environment/project/com.ti.ccstudio.buildDefinitions.MSP430.Debug.1180373388/driverlib/value=/Applications/ti/msp/MSP430Ware_3_80_14_01/driverlib/driverlib/MSP430FR5xx_6xx
