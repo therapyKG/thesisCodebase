@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.1)  11 APR 2023 02:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.1)  11 APR 2023 04:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,84 +473,87 @@ Package pdftex.def Info: method/3.1.png  used on input line 111.
 [10
 
 ]
-<method/device.jpg, id=43, 3276.24pt x 1527.7075pt>
+<method/arch.png, id=43, 667.49374pt x 362.35374pt>
+File: method/arch.png Graphic file (type png)
+<use method/arch.png>
+Package pdftex.def Info: method/arch.png  used on input line 139.
+(pdftex.def)             Requested size: 346.89732pt x 188.31998pt.
+<method/device.jpg, id=44, 3276.24pt x 1527.7075pt>
 File: method/device.jpg Graphic file (type jpg)
 <use method/device.jpg>
-Package pdftex.def Info: method/device.jpg  used on input line 171.
+Package pdftex.def Info: method/device.jpg  used on input line 179.
 (pdftex.def)             Requested size: 346.89732pt x 161.7544pt.
- [11 <./method/3.1.png>] [12 <./method/device.jpg>] [13]
-<method/lenet5.png, id=56, 1559.8275pt x 438.63875pt>
-File: method/lenet5.png Graphic file (type png)
-<use method/lenet5.png>
-Package pdftex.def Info: method/lenet5.png  used on input line 266.
-(pdftex.def)             Requested size: 433.62001pt x 121.93451pt.
-<method/datasets.png, id=57, 1671.24374pt x 530.98375pt>
-File: method/datasets.png Graphic file (type png)
-<use method/datasets.png>
-Package pdftex.def Info: method/datasets.png  used on input line 286.
-(pdftex.def)             Requested size: 433.62001pt x 137.76894pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 297--310
-
- []
-
-
-Underfull \vbox (badness 1400) has occurred while \output is active []
-
- [14 <./method/lenet5.png>]
-<method/trace2.png, id=63, 977.6525pt x 439.6425pt>
-File: method/trace2.png Graphic file (type png)
-<use method/trace2.png>
-Package pdftex.def Info: method/trace2.png  used on input line 322.
-(pdftex.def)             Requested size: 346.89732pt x 155.99702pt.
-<method/trace.PNG, id=64, 962.09438pt x 217.5628pt>
-File: method/trace.PNG Graphic file (type png)
-<use method/trace.PNG>
-Package pdftex.def Info: method/trace.PNG  used on input line 323.
-(pdftex.def)             Requested size: 346.89732pt x 78.44537pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 312--327
-
- []
-
-[15 <./method/datasets.png>]
-<method/struct.png, id=69, 824.07875pt x 272.01625pt>
+ [11 <./method/3.1.png>] [12 <./method/arch.png>] [13 <./method/device.jpg>]
+<method/struct.png, id=58, 824.07875pt x 272.01625pt>
 File: method/struct.png Graphic file (type png)
 <use method/struct.png>
-Package pdftex.def Info: method/struct.png  used on input line 332.
+Package pdftex.def Info: method/struct.png  used on input line 274.
 (pdftex.def)             Requested size: 390.25536pt x 128.8189pt.
+ [14]
+<method/lenet5.png, id=62, 1559.8275pt x 438.63875pt>
+File: method/lenet5.png Graphic file (type png)
+<use method/lenet5.png>
+Package pdftex.def Info: method/lenet5.png  used on input line 301.
+(pdftex.def)             Requested size: 433.62001pt x 121.93451pt.
+ [15 <./method/struct.png> <./method/lenet5.png>]
+<method/datasets.png, id=68, 1671.24374pt x 530.98375pt>
+File: method/datasets.png Graphic file (type png)
+<use method/datasets.png>
+Package pdftex.def Info: method/datasets.png  used on input line 321.
+(pdftex.def)             Requested size: 433.62001pt x 137.76894pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 343--354
+Underfull \hbox (badness 10000) in paragraph at lines 332--345
 
  []
 
-[16 <./method/trace2.png> <./method/trace.PNG> <./method/struct.png>] [17]
+[16 <./method/datasets.png>]
+<method/trace2.png, id=74, 977.6525pt x 439.6425pt>
+File: method/trace2.png Graphic file (type png)
+<use method/trace2.png>
+Package pdftex.def Info: method/trace2.png  used on input line 357.
+(pdftex.def)             Requested size: 346.89732pt x 155.99702pt.
+<method/trace.PNG, id=75, 962.09438pt x 217.5628pt>
+File: method/trace.PNG Graphic file (type png)
+<use method/trace.PNG>
+Package pdftex.def Info: method/trace.PNG  used on input line 358.
+(pdftex.def)             Requested size: 346.89732pt x 78.44537pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 347--362
+
+ []
+
+[17 <./method/trace2.png> <./method/trace.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 393--404
+
+ []
+
+[18] [19]
 Chapter 4.
-[18
+[20
 
 ]
 Chapter 5.
-[19
+[21
 
 ]
 Chapter 6.
 No file thesis.bbl.
-[20
+[22
 
 ] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 6897 strings out of 478268
- 107380 string characters out of 5846347
- 415036 words of memory out of 5000000
- 25001 multiletter control sequences out of 15000+600000
+ 6905 strings out of 478268
+ 107519 string characters out of 5846347
+ 415047 words of memory out of 5000000
+ 25008 multiletter control sequences out of 15000+600000
  475297 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,9n,76p,293b,279s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on thesis.pdf (20 pages, 6900014 bytes).
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on thesis.pdf (22 pages, 6927213 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 141 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

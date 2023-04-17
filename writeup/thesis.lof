@@ -2,11 +2,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Diagram of component connections.}}{11}{}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Our test device, with each component labeled.}}{12}{}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Structure of LeNet-5.[source]}}{14}{}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Sample images from datasets used to test ML model performance. \\Left: MNIST, Middle: Fashion-MNIST, Right: CIFAR-10}}{15}{}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Example Energytrace outputs.}}{16}{}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Structure of an EH Device Application.}}{16}{}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Architecture of}}{12}{}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Our test device, with each component labeled.}}{13}{}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Structure of an EH Device Application.}}{15}{}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Structure of LeNet-5.[source]}}{15}{}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Sample images from datasets used to test ML model performance. \\Left: MNIST, Middle: Fashion-MNIST, Right: CIFAR-10}}{16}{}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Example Energytrace outputs.}}{17}{}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

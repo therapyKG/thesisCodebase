@@ -132,6 +132,14 @@ Figure \ref{fig:connection} is a diagram of how the components in our device are
     \item Long range radio: We select the RFM95W long range radio transceiver. It has a transmission range of 
           approximately $2$ kilometers or $1.24$ miles, and operates in either the 868 or 915 MHz channel.
 \end{enumerate}
+\subsubsection{Processor Architecture}
+*See fig.3.2*, more detail on the architecture of the specific chip we are using.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\linewidth]{method/arch.png}
+    \caption{Architecture of}
+    \label{fig:arch}
+\end{figure}
 
 \subsection{Component Power Consumption}
 Since the focus of this thesis is optimizing energy efficiency, we should pay attention to hardware power 
@@ -194,9 +202,6 @@ which is TI's code generation tool for compiling device-specific assembly code. 
 our device through the onboard debugger via a USB connection. CCS's code editor also provides advice 
 on best practices for writing energy efficient C code.
 
-\subsection{Development Process}
-
-
 \subsection{External Packages}
 Working with embedded MCUs such as the MSP430 series often involve programming directly at the register level, 
 which requires writing complex code with low readbility. 
@@ -233,6 +238,30 @@ implementation, along with a short description of their usage.
     \end{center}
 \end{table}
 
+\subsection{Development Process}
+At a high level, this is how we develop software to perform the tasks listed at the begining of the section:
+\begin{enumerate}
+    \item To load dataset for local inference, we first load the dataset onto a microSD card, 
+    then we interface with the card using TI's SDCardLib library, reading one image at a time and load 
+    it onto the device's FRAM.
+
+    \item To poll onboard sensor for temperature data, we use TI's MSP430 DriverLib API to read from 
+    the onboard analog-digital converter (ADC) to acqurie the raw reading of the temperature sensor. 
+    We then convert this raw data into either Celsius or Farenheit using $2$ reference datapoints: 
+    and the following formula: 
+
+    \item To communicate with the long range radio or the camera,
+    
+    \item The neural network used for local inference was implemented using TI's DSPLib, which contains 
+    architecture-specific implementations of matrix and vector operations. The operations implemented 
+    in DSPLib are capable of higher performance and efficiency because they take advantage of our particular MCU's low-energy accelerator (LEA), 
+    which is a built-in 32-bit hardware accelerator for normally slow and power hungry operations such as 
+    matrix multiplication and fast Fourier transforms (FFT). 
+    
+    \item To adjust clock frequency for power and/or performance reasons, again we use DriverLib 
+    to modify the registers on the MCU whose values directly controll its clock frequency.
+\end{enumerate}
+
 \section{Software Applications}
 In this thesis, we focus on optimizing the energy efficiency for two specific applications: 
 inference using a local classification network, and recording environment temperature using an 
@@ -240,6 +269,12 @@ onboard sensor. This section introduces general structure of an application runn
 as well as the two specific applications we focus on, while Section \ref{sec:testMethod} 
 discusses the efficiency mitigations we propose and test.
 \subsection{Application Structure}
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.9\linewidth]{method/struct.png}
+    \caption{Structure of an EH Device Application.}
+    \label{fig:struct}
+\end{figure}
 
 \subsection{Application: Local Inference}
 \subsubsection{Limitations Of Local Inference (Move to Experiments section?)}
@@ -326,18 +361,33 @@ during operation, such as voltage, current, average and max power draw, etc.
 \end{figure}
 
 \subsection{General Testing Framework (Move to experiments?)}
-\subsubsection{General Structure}
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.9\linewidth]{method/struct.png}
-    \caption{Structure of an EH Device Application.}
-    \label{fig:struct}
-\end{figure}
 \subsubsection{Preprocessing Methods}
 
+Recall from chapters that we propose to test different preprocessing methods' effects on energy efficiency. 
+In this thesis we will test $2$ preprocessing methods: \textbf{Structural Similarity Index Measure (SSIM)}[source] 
+and \textbf{Statistical Analysis}.
+
+Specifically, we proposed \textbf{SSIM} as an alternative to the simple preprocessing method employed in current application
+pipelines, where $2$ images are determined different if their pixel values differed by more than a 
+heuristically determined threshold. Alternatively, SSIM evaluates the similarity between $2$ images across 
+$3$ dimensions: luminance, contrast, and structure. SSIM's formula is as follows (placeholder): 
+\[ SSIM: x^n + y^n = z^n \] 
+
+
 \subsubsection{Clock Frequency Manipulation}
+Manipulating the device's clock frequency for lower power consumption or higher performance 
+is the first component in the computational sprinting portion of this thesis. Specifically, 
+we observe that our processor consumes much less power at lower clock speeds with lower performance, 
+but also demonstrates higher energy efficiency per clock cycle at higher clock speeds with higher performance.
+We think such behavior can be utilized for higher overall efficiency, if we turn down the clock speed 
+when less computation is required to save power, then boost the clock speed during heavy workloads for 
+higher performance and efficiency.
 
 \subsubsection{Work Schedule Manipulation}
+Creating a task schedule to collect and process data in batches instead of individually
+is the second component in the computational sprinting portion of this thesis. This is an extension 
+of the observation we made on clock frequency behaviors. We wanted to see if higher overall 
+power efficiency can be achieved by scheduling software tasks to allow for both idling and boosting
 
 \subsection{Evaluating Performance (Efficiency Improvements)}
 Ideally, the performace and energy efficiency of our test device should be evaluated using a real-world workload
