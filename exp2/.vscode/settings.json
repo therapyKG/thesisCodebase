@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "msp430.h": "c",
+        "msp430fr5994.h": "c",
+        "driverlib.h": "c",
+        "sprinter.h": "c",
+        "spi.h": "c",
+        "uart.h": "c"
+    }
+}
