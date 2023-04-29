@@ -17,12 +17,12 @@
 
 #define scalar 10000
 
-typedef int iMat[ROW][COL];
+typedef uint16_t iMat[ROW][COL];
 
-int getLuminenceScore(iMat img);
+uint16_t getLuminenceScore(iMat img);
 
-int getContrastScore(iMat img, int luminence);
+uint16_t getContrastScore(iMat img, uint16_t luminence);
 
-int SSIM(iMat img1, iMat img2);
+uint16_t SSIM(iMat img1, iMat img2);
 
 void putTestImg(iMat img);
