@@ -31,16 +31,17 @@
 \contentsline {subsubsection}{Work Schedule Manipulation}{18}{}%
 \contentsline {subsection}{\numberline {3.4.4}Evaluating Performance (Efficiency Improvements)}{18}{}%
 \contentsline {section}{\numberline {3.5}Summary}{19}{}%
-\contentsline {chapter}{\numberline {4}Experiments}{20}{}%
-\contentsline {section}{\numberline {4.1}Baseline}{20}{}%
-\contentsline {subsection}{\numberline {4.1.1}Sense-and-Send Baseline}{20}{}%
-\contentsline {subsection}{\numberline {4.1.2}Local Inference Baseline}{20}{}%
-\contentsline {section}{\numberline {4.2}Testing Preprocessing Methods}{20}{}%
-\contentsline {subsection}{\numberline {4.2.1}Implementation}{20}{}%
-\contentsline {section}{\numberline {4.3}Testing Sprinting Strategies}{20}{}%
-\contentsline {subsection}{\numberline {4.3.1}Implementation}{20}{}%
-\contentsline {section}{\numberline {4.4}Summary}{20}{}%
-\contentsline {chapter}{\numberline {5}Results}{21}{}%
+\contentsline {chapter}{\numberline {4}Implementation}{20}{}%
+\contentsline {section}{\numberline {4.1}Sprinting Framework}{20}{}%
+\contentsline {section}{\numberline {4.2}Sense-and-Send Baseline}{20}{}%
+\contentsline {section}{\numberline {4.3}Local Inference Baseline}{20}{}%
+\contentsline {section}{\numberline {4.4}Preprocessing Methods}{20}{}%
+\contentsline {subsection}{\numberline {4.4.1}Naive Image Differencing}{20}{}%
+\contentsline {subsection}{\numberline {4.4.2}Image Differencing with Normalization}{20}{}%
+\contentsline {subsection}{\numberline {4.4.3}Structural Similarity}{20}{}%
+\contentsline {section}{\numberline {4.5}Experiments}{20}{}%
+\contentsline {section}{\numberline {4.6}Summary}{20}{}%
+\contentsline {chapter}{\numberline {5}Evaluation}{21}{}%
 \contentsline {section}{\numberline {5.1}Summary}{21}{}%
 \contentsline {chapter}{\numberline {6}Conclusion}{22}{}%
 \contentsline {section}{\numberline {6.1}Summary}{22}{}%

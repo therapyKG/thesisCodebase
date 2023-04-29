@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex thesis"] 1681201210 "thesis.aux" "thesis.bbl" "thesis" 1681201211
+["bibtex thesis"] 1682787655 "thesis.aux" "thesis.bbl" "thesis" 1682787656
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/acm.bst" 1292289607 21064 c61a48664f3c347ce7f73c1a6a530506 ""
   "references.bib" 0 -1 0 ""
-  "thesis.aux" 1681201211 7286 3421ac297c4ead6b1013986ade9e240e "pdflatex"
+  "thesis.aux" 1682787656 7418 22168c5a514130f78fdeac813212f069 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
-["pdflatex"] 1681201210 "/Users/kurtgu/thesisCodebase/writeup/thesis.tex" "thesis.pdf" "thesis" 1681201211
-  "/Users/kurtgu/thesisCodebase/writeup/thesis.tex" 1681201210 21910 5556c985d4f5a5b5ac036526f7d777ea ""
+["pdflatex"] 1682787655 "/Users/kurtgu/thesisCodebase/writeup/thesis.tex" "thesis.pdf" "thesis" 1682787656
+  "/Users/kurtgu/thesisCodebase/writeup/thesis.tex" 1682787653 21967 793274ccb7a7fb6296896b7c28bd0a20 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -93,12 +93,12 @@
   "method/struct.png" 1681195560 38942 2da36a709ab092f63b81e5f75b685b74 ""
   "method/trace.PNG" 1680619058 13540 f551caec86a3543edcc5b5c8dfe49573 ""
   "method/trace2.png" 1680619379 141251 bf43083a9f95b8064d28f24ace04981d ""
-  "thesis.aux" 1681201211 7286 3421ac297c4ead6b1013986ade9e240e "pdflatex"
+  "thesis.aux" 1682787656 7418 22168c5a514130f78fdeac813212f069 "pdflatex"
   "thesis.bbl" 0 -1 0 "bibtex thesis"
-  "thesis.lof" 1681201211 879 ce72d461187511ea01435025a5dba371 "pdflatex"
-  "thesis.lot" 1681201211 287 dcb70ba085031cbd2da1227c5b3851b9 "pdflatex"
-  "thesis.tex" 1681201210 21910 5556c985d4f5a5b5ac036526f7d777ea ""
-  "thesis.toc" 1681201211 3206 385d80b852bd39f5ac1467a935995940 "pdflatex"
+  "thesis.lof" 1682787656 879 ce72d461187511ea01435025a5dba371 "pdflatex"
+  "thesis.lot" 1682787656 287 dcb70ba085031cbd2da1227c5b3851b9 "pdflatex"
+  "thesis.tex" 1682787653 21967 793274ccb7a7fb6296896b7c28bd0a20 ""
+  "thesis.toc" 1682787656 3297 dd9be5998d82b46abe8acd211c8a1003 "pdflatex"
   (generated)
   "thesis.aux"
   "thesis.lof"
